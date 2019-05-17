@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+@for $i from 1 through 24 {
+    .col-span-#{$i} {
+        flex-grow: 0;
+        width: $i / 24 * 100%;
+    }
+}
