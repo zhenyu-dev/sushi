@@ -11,17 +11,39 @@
         <div class="square square3"></div>
       </Column>
     </Row>
+
+    <br />
+
+    <s-view>
+      <s-left>
+        <span class="title">title</span>
+      </s-left>
+      <s-center>
+        <span class="content">content</span>
+      </s-center>
+      <s-right class="s_right">
+        <span class="arrow">arrow</span>
+      </s-right>
+    </s-view>
   </div>
 </template>
 
 <script>
 import Row from "@/components/Row.vue";
 import Column from "@/components/Column.vue";
+import View from "@/components/View.vue";
+import Left from "@/components/Left.vue";
+import Center from "@/components/Center.vue";
+import Right from "@/components/Right.vue";
 export default {
   name: "app",
   components: {
     Row,
-    Column
+    Column,
+    "s-view": View,
+    "s-left": Left,
+    "s-center": Center,
+    "s-right": Right
   }
 };
 </script>
@@ -38,6 +60,19 @@ export default {
   background-color: #ffb677;
 }
 .square3 {
+  background-color: #ff8364;
+}
+.title {
+  display: inline-block;
+  height: 50px;
+  background-color: #ffd98e;
+}
+.content {
+  display: inline-block;
+  background-color: #ffb677;
+}
+.arrow {
+  display: inline-block;
   background-color: #ff8364;
 }
 </style>

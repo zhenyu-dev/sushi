@@ -1,6 +1,6 @@
 <template>
   <div class="col" :class="colClass">
-    <slot/>
+    <slot />
   </div>
 </template>
 
