@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <ul class="flex text-sm text-dark-1">
+    <ul class="flex text-sm text-dark-1 items-center">
       <li
         class="w-5 h-5 flex items-center justify-center mx-1 rounded-sm"
         :class="[value <= 1 ? 'text-dark-2' : 'cursor-pointer']"
