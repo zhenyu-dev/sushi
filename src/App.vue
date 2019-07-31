@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="p-20">
-    <div class="h-64 overflow-y-scroll">
-      <ss-table :headers="headers" :items="items" fixed-header />
+    <div class>
+      <ss-table :headers="headers" :items="items" fixed-header :scroll-y="'500px'" />
     </div>
   </div>
 </template>
@@ -21,52 +21,63 @@ export default {
         {
           text: "#",
           value: "id",
-          align: "right"
+          align: "right",
+          width: "60px"
         },
         {
           text: "代码",
           value: "code",
-          align: "right"
+          align: "right",
+          width: "60px",
+          width: "120px"
         },
         {
           text: "公司",
           value: "company",
-          align: "left"
+          align: "left",
+          width: "120px"
         },
         {
           text: "行业",
           value: "industry",
-          align: "left"
+          align: "left",
+          width: "160px"
         },
         {
           text: "PE-TTM",
           value: "PE-TTM",
-          align: "right"
+          align: "right",
+          width: "120px"
         },
         {
           text: "股价",
           value: "current",
-          align: "right"
+          align: "right",
+          width: "120px"
         },
         {
           text: "市值 (亿)",
           value: "total",
-          align: "right"
+          align: "right",
+          width: "120px"
         },
         {
           text: "上市时间",
           value: "date",
-          align: "left"
+          align: "left",
+          width: "150px"
         },
         {
           text: "基本每股收益 (%)",
           value: "sy",
-          align: "right"
+          align: "right",
+          width: "180px"
         },
         {
           text: "关注度",
           value: "focus",
-          align: "right"
+          align: "right",
+          width: "100px"
         }
       ],
       items
