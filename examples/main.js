@@ -1,6 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 
+import sui from '../packages'
+
+Vue.use(sui)
+
 Vue.config.productionTip = false;
 
 new Vue({
