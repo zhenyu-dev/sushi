@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-    <button @click="showToast">show toast</button>
+    <router-view />
   </div>
 </template>
 
 <script>
 
-import Toast from '../packages/toast'
-
 export default {
-  name: "app",
-  methods: {
-    showToast () {
-      Toast()
-    }
-  }
+  name: "app"
 };
 </script>
