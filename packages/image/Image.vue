@@ -4,6 +4,7 @@ import { toBase64 } from "./toBase64";
 
 export default {
   name: "VImage",
+  inheritAttrs: false,
   props: {
     src: {
       type: String,
@@ -196,10 +197,10 @@ export default {
         h("img", {
           ref: "image",
           style: this.imgStyle,
-          class: [this.imgClass, `img`],
           attrs: {
             src: this.isVisible || !this.isLazy ? this.src : "",
           },
+          domProps: this.$attrs
         }),
       ]
     );

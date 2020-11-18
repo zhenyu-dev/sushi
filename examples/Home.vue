@@ -1,6 +1,18 @@
 <template>
   <div class="">
-    <VImage src="/images/i.jpg?i=1" :width="800" :height="450" id="1" />
+    <VImage
+      src="/images/icons/dribbble.png?i=1"
+      :width="200"
+      :height="200"
+      srcset="/images/icons/dribbble.png, /images/icons/dribbble@2x.png 2x, /images/icons/dribbble@3x.png 3x"
+    />
+    <VImage
+      src="/images/i.jpg?i=1"
+      :width="800"
+      :height="450"
+      id="1"
+      alt="alt..."
+    />
     <br />
     <VImage src="/images/i.jpg?i=2" :width="800" :height="450" layout="intrinsic" id="2" />
     <br />
