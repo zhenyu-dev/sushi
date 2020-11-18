@@ -9,15 +9,15 @@ function observe(element, callback, options) {
 
     if (elements.size === 0) {
       observer.disconnect();
-      window.observers.delete(id);
+      observers.delete(id);
     }
   };
 }
 
-window.observers = new Map();
+const observers = new Map();
 
 function createObserver(options) {
-  let instance = window.observers.get(options.root);
+  let instance = observers.get(options.root);
   if (instance) {
     return instance;
   }
@@ -33,7 +33,7 @@ function createObserver(options) {
     });
   }, options);
 
-  window.observers.set(
+  observers.set(
     options.root,
     (instance = {
       id: options.root,

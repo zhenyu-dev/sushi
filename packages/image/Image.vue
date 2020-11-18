@@ -206,11 +206,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.img_wrapper {
-}
-
-.img_lazy-visible {
-}
-</style>

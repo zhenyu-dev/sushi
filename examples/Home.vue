@@ -24,7 +24,6 @@
       <VImage src="/images/i.jpg?i=5" layout="fill" objectFit="none" id="7" />
     </div>
     <br />
-    <Test />
   </div>
 </template>
 
